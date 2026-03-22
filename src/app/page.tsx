@@ -25,6 +25,8 @@ const lifeTools = [
   { name: "더치페이 계산기", desc: "N빵/팁 계산", href: "/tip-calculator" },
   { name: "카운트다운 타이머", desc: "D-Day 실시간 카운트다운", href: "/countdown" },
   { name: "전기요금 계산기", desc: "누진제 전기세 계산", href: "/electricity" },
+  { name: "타자 속도 테스트", desc: "타이핑 속도 측정", href: "/typing-speed" },
+  { name: "쿠팡 수수료 계산기", desc: "판매 수익 계산", href: "/coupang-fee" },
 ];
 
 const mfgTools = [
@@ -50,6 +52,9 @@ const devTools = [
   { name: "마크다운 미리보기", desc: "Markdown 실시간 편집", href: "/markdown-preview" },
   { name: "폰트 미리보기", desc: "웹폰트 비교 미리보기", href: "/font-preview" },
   { name: "소득세 계산기", desc: "종합소득세 계산", href: "/tax-calculator" },
+  { name: "Unix 타임스탬프", desc: "타임스탬프↔날짜 변환", href: "/timestamp" },
+  { name: "서브넷 계산기", desc: "CIDR/서브넷마스크", href: "/subnet" },
+  { name: "chmod 권한 계산기", desc: "리눅스 파일 권한", href: "/chmod" },
 ];
 
 const imageTools = [
