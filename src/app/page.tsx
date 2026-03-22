@@ -24,6 +24,7 @@ const lifeTools = [
   { name: "칼로리 계산기", desc: "일일 권장 칼로리 계산", href: "/calorie" },
   { name: "더치페이 계산기", desc: "N빵/팁 계산", href: "/tip-calculator" },
   { name: "카운트다운 타이머", desc: "D-Day 실시간 카운트다운", href: "/countdown" },
+  { name: "전기요금 계산기", desc: "누진제 전기세 계산", href: "/electricity" },
 ];
 
 const mfgTools = [
@@ -45,6 +46,10 @@ const devTools = [
   { name: "URL 인코더/디코더", desc: "URL 인코딩/디코딩", href: "/url-encoder" },
   { name: "정규식 테스터", desc: "정규표현식 실시간 테스트", href: "/regex-tester" },
   { name: "내 IP 주소 확인", desc: "공인 IP 조회", href: "/ip-check" },
+  { name: "화면 크기 확인", desc: "해상도/뷰포트/PPI", href: "/screen-size" },
+  { name: "마크다운 미리보기", desc: "Markdown 실시간 편집", href: "/markdown-preview" },
+  { name: "폰트 미리보기", desc: "웹폰트 비교 미리보기", href: "/font-preview" },
+  { name: "소득세 계산기", desc: "종합소득세 계산", href: "/tax-calculator" },
 ];
 
 const imageTools = [
