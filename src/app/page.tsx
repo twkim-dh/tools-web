@@ -9,15 +9,27 @@ const financeTools = [
   { name: "마진 계산기", desc: "마진율, 원가, 판매가 역산 계산", href: "/margin" },
   { name: "유튜브 수익 계산기", desc: "예상 광고 수익을 원화로 확인", href: "/youtube" },
   { name: "퍼센트 계산기", desc: "퍼센트 계산 3가지 모드 지원", href: "/percent" },
+  { name: "환율 계산기", desc: "USD, JPY, EUR, CNY 환율 변환", href: "/exchange" },
+  { name: "시급 변환 계산기", desc: "시급/월급/연봉 상호 변환", href: "/time" },
+  { name: "금 시세 계산기", desc: "24K/18K/14K 무게별 금 가격", href: "/gold" },
+  { name: "시급 계산기 (2026)", desc: "최저시급 기준 월급/연봉 계산", href: "/hourly" },
 ];
 
 const lifeTools = [
-  { name: "BMI 계산기", desc: "체질량지수 측정", href: "#" },
+  { name: "BMI 계산기", desc: "체질량지수 측정 및 판정", href: "/bmi" },
+  { name: "나이 계산기", desc: "만 나이 / 한국 나이 / 띠 / 별자리", href: "/age" },
+  { name: "날짜 계산기", desc: "D-Day, 날짜 차이 계산", href: "/date" },
   { name: "칼로리 계산기", desc: "일일 권장 칼로리", href: "#" },
-  { name: "나이 계산기", desc: "만 나이 / 한국 나이", href: "#" },
   { name: "단위 변환기", desc: "길이, 무게, 온도 변환", href: "#" },
-  { name: "날짜 계산기", desc: "D-Day, 기간 계산", href: "#" },
   { name: "타이머", desc: "스톱워치 & 타이머", href: "#" },
+];
+
+const mfgTools = [
+  { name: "단중 계산기", desc: "코일/판재 단위중량 계산", href: "/unit-weight" },
+  { name: "Cpk 계산기", desc: "공정능력지수 Cp/Cpk 계산", href: "/cpk" },
+  { name: "UPH 계산기", desc: "시간당 생산량 계산", href: "/uph" },
+  { name: "불량률 계산기", desc: "PPM/불량률/수율/시그마 계산", href: "/defect" },
+  { name: "가동률/OEE 계산기", desc: "종합설비효율 OEE 계산", href: "/oee" },
 ];
 
 const devTools = [
@@ -93,7 +105,7 @@ export default function Home() {
         id="finance"
         icon="&#x1F4B0;"
         title="금융/재테크"
-        count={8}
+        count={12}
         tools={financeTools}
       />
       <CategorySection
@@ -102,6 +114,13 @@ export default function Home() {
         title="생활/건강"
         count={6}
         tools={lifeTools}
+      />
+      <CategorySection
+        id="mfg"
+        icon="&#x1F3ED;"
+        title="제조/생산"
+        count={5}
+        tools={mfgTools}
       />
       <CategorySection
         id="dev"
