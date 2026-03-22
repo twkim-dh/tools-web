@@ -13,6 +13,10 @@ const financeTools = [
   { name: "시급 변환 계산기", desc: "시급↔월급↔연봉 변환", href: "/time" },
   { name: "금 시세 계산기", desc: "24K/18K/14K 가격 계산", href: "/gold" },
   { name: "시급 계산기 (2026)", desc: "최저시급 기준 계산", href: "/hourly" },
+  { name: "대출 비교 계산기", desc: "은행별 대출 이자 비교", href: "/loan-compare" },
+  { name: "전세 vs 월세 비교", desc: "전월세 비용 비교", href: "/rent-vs-buy" },
+  { name: "투자 수익률 (ROI)", desc: "ROI/CAGR 계산", href: "/investment-return" },
+  { name: "쿠팡 수수료 계산기", desc: "판매 수익 계산", href: "/coupang-fee" },
 ];
 
 const lifeTools = [
@@ -55,6 +59,8 @@ const devTools = [
   { name: "Unix 타임스탬프", desc: "타임스탬프↔날짜 변환", href: "/timestamp" },
   { name: "서브넷 계산기", desc: "CIDR/서브넷마스크", href: "/subnet" },
   { name: "chmod 권한 계산기", desc: "리눅스 파일 권한", href: "/chmod" },
+  { name: "진법 변환기", desc: "2/8/10/16진수 변환", href: "/binary-converter" },
+  { name: "HTML 엔티티 변환", desc: "특수문자↔엔티티", href: "/html-entity" },
 ];
 
 const imageTools = [
