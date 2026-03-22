@@ -1,87 +1,97 @@
 import Link from "next/link";
 
 const financeTools = [
-  { name: "연봉 실수령액 계산기", desc: "세후 월급과 공제 항목을 한눈에 확인", href: "/salary" },
-  { name: "퇴직금 계산기", desc: "근무기간과 급여 기반 예상 퇴직금 계산", href: "/severance" },
-  { name: "대출 이자 계산기", desc: "월 상환액과 상환 스케줄 확인", href: "/loan" },
-  { name: "부가세 계산기", desc: "VAT 포함/제외 금액 간편 계산", href: "/vat" },
-  { name: "적금 이자 계산기", desc: "만기 수령액과 세후 이자 계산", href: "/deposit" },
-  { name: "마진 계산기", desc: "마진율, 원가, 판매가 역산 계산", href: "/margin" },
-  { name: "유튜브 수익 계산기", desc: "예상 광고 수익을 원화로 확인", href: "/youtube" },
-  { name: "퍼센트 계산기", desc: "퍼센트 계산 3가지 모드 지원", href: "/percent" },
-  { name: "환율 계산기", desc: "USD, JPY, EUR, CNY 환율 변환", href: "/exchange" },
-  { name: "시급 변환 계산기", desc: "시급/월급/연봉 상호 변환", href: "/time" },
-  { name: "금 시세 계산기", desc: "24K/18K/14K 무게별 금 가격", href: "/gold" },
-  { name: "시급 계산기 (2026)", desc: "최저시급 기준 월급/연봉 계산", href: "/hourly" },
+  { name: "연봉 실수령액 계산기", desc: "세후 월급과 공제 항목 확인", href: "/salary" },
+  { name: "퇴직금 계산기", desc: "근무기간 기반 예상 퇴직금", href: "/severance" },
+  { name: "대출 이자 계산기", desc: "월 상환액과 상환 스케줄", href: "/loan" },
+  { name: "부가세 계산기", desc: "VAT 포함/제외 계산", href: "/vat" },
+  { name: "적금 이자 계산기", desc: "만기 수령액 계산", href: "/deposit" },
+  { name: "마진 계산기", desc: "마진율/원가/판매가 역산", href: "/margin" },
+  { name: "유튜브 수익 계산기", desc: "예상 광고 수익 계산", href: "/youtube" },
+  { name: "퍼센트 계산기", desc: "% 계산 3가지 모드", href: "/percent" },
+  { name: "환율 계산기", desc: "USD/JPY/EUR/CNY 변환", href: "/exchange" },
+  { name: "시급 변환 계산기", desc: "시급↔월급↔연봉 변환", href: "/time" },
+  { name: "금 시세 계산기", desc: "24K/18K/14K 가격 계산", href: "/gold" },
+  { name: "시급 계산기 (2026)", desc: "최저시급 기준 계산", href: "/hourly" },
 ];
 
 const lifeTools = [
   { name: "BMI 계산기", desc: "체질량지수 측정 및 판정", href: "/bmi" },
-  { name: "나이 계산기", desc: "만 나이 / 한국 나이 / 띠 / 별자리", href: "/age" },
+  { name: "나이 계산기", desc: "만나이/한국나이/띠/별자리", href: "/age" },
   { name: "날짜 계산기", desc: "D-Day, 날짜 차이 계산", href: "/date" },
-  { name: "칼로리 계산기", desc: "일일 권장 칼로리", href: "#" },
-  { name: "단위 변환기", desc: "길이, 무게, 온도 변환", href: "#" },
-  { name: "타이머", desc: "스톱워치 & 타이머", href: "#" },
 ];
 
 const mfgTools = [
-  { name: "단중 계산기", desc: "코일/판재 단위중량 계산", href: "/unit-weight" },
-  { name: "Cpk 계산기", desc: "공정능력지수 Cp/Cpk 계산", href: "/cpk" },
+  { name: "단중 계산기", desc: "코일/판재 단위중량", href: "/unit-weight" },
+  { name: "Cpk 계산기", desc: "공정능력지수 계산", href: "/cpk" },
   { name: "UPH 계산기", desc: "시간당 생산량 계산", href: "/uph" },
-  { name: "불량률 계산기", desc: "PPM/불량률/수율/시그마 계산", href: "/defect" },
-  { name: "가동률/OEE 계산기", desc: "종합설비효율 OEE 계산", href: "/oee" },
+  { name: "불량률 계산기", desc: "PPM/수율/시그마 계산", href: "/defect" },
+  { name: "가동률/OEE 계산기", desc: "종합설비효율 계산", href: "/oee" },
 ];
 
 const devTools = [
-  { name: "JSON 포맷터", desc: "JSON 정렬 및 검증", href: "#" },
-  { name: "Base64 인코더", desc: "인코딩/디코딩 변환", href: "#" },
-  { name: "해시 생성기", desc: "MD5, SHA-256 해시", href: "#" },
-  { name: "정규식 테스터", desc: "정규표현식 실시간 테스트", href: "#" },
-  { name: "색상 변환기", desc: "HEX, RGB, HSL 변환", href: "#" },
+  { name: "JSON 포맷터", desc: "JSON 정리/압축/검증", href: "/json" },
+  { name: "Base64 인코더/디코더", desc: "Base64 변환", href: "/base64" },
+  { name: "JWT 디코더", desc: "JWT 토큰 분석", href: "/jwt" },
+  { name: "Cron 표현식 변환기", desc: "크론 스케줄 해석", href: "/cron" },
+  { name: "SQL 포맷터", desc: "SQL 쿼리 정리", href: "/sql" },
 ];
 
 const imageTools = [
-  { name: "이미지 리사이즈", desc: "크기 조절 및 자르기", href: "#" },
-  { name: "이미지 압축", desc: "용량 줄이기", href: "#" },
-  { name: "이미지 변환", desc: "PNG, JPG, WebP 변환", href: "#" },
-  { name: "QR코드 생성기", desc: "QR코드 만들기", href: "#" },
-  { name: "파비콘 생성기", desc: "파비콘 만들기", href: "#" },
+  { name: "이미지 압축", desc: "이미지 용량 줄이기", href: "/image-compress" },
+  { name: "이미지 변환", desc: "PNG/JPG/WebP 변환", href: "/image-convert" },
+  { name: "이미지 리사이즈", desc: "이미지 크기 변경", href: "/image-resize" },
+  { name: "유튜브 썸네일", desc: "YouTube 썸네일 추출", href: "/youtube-thumbnail" },
+  { name: "QR코드 생성기", desc: "QR코드 만들기", href: "/qr" },
+];
+
+const docTools = [
+  { name: "퇴사 문자 생성기", desc: "정중한 퇴사 인사말", href: "/resign-letter" },
+  { name: "거절 메시지 생성기", desc: "정중한 거절 문구", href: "/reject-message" },
+  { name: "축의금/조의금 문구", desc: "경조사 메시지 생성", href: "/congratulation" },
+  { name: "연차 사유 생성기", desc: "연차 신청 사유 예시", href: "/annual-leave" },
+  { name: "지각 변명 생성기", desc: "지각 사유 문자", href: "/late-excuse" },
+  { name: "한줄 요약기", desc: "텍스트 요약 도구", href: "/text-summary" },
+];
+
+const genTools = [
+  { name: "닉네임 생성기", desc: "랜덤 닉네임 만들기", href: "/nickname-gen" },
+  { name: "회사명/브랜드명 생성기", desc: "창의적 이름 추천", href: "/company-name-gen" },
+  { name: "팀명 생성기", desc: "랜덤 팀 이름 생성", href: "/team-name-gen" },
+  { name: "랜덤 뽑기", desc: "무작위 선택/추첨", href: "/random-picker" },
+  { name: "비밀번호 생성기", desc: "안전한 비밀번호", href: "/password-gen" },
+];
+
+const compareTools = [
+  { name: "적금 이율 비교", desc: "은행별 적금 금리 비교", href: "/deposit-compare" },
+  { name: "신용카드 혜택 비교", desc: "카드별 혜택 비교", href: "/card-compare" },
+  { name: "통신사 요금 비교", desc: "알뜰폰 요금제 비교", href: "/phone-compare" },
 ];
 
 interface CategoryProps {
   id: string;
   icon: string;
   title: string;
-  count: number;
   tools: { name: string; desc: string; href: string }[];
 }
 
-function CategorySection({ id, icon, title, count, tools }: CategoryProps) {
+function CategorySection({ id, icon, title, tools }: CategoryProps) {
   return (
     <section id={id} className="mb-12">
       <h2 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
         <span>{icon}</span>
         {title}
-        <span className="text-sm font-normal text-gray-400">({count}개)</span>
+        <span className="text-sm font-normal text-gray-400">({tools.length}개)</span>
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
         {tools.map((tool) => (
           <Link
             key={tool.name}
             href={tool.href}
-            className={`block p-4 bg-white rounded-xl border border-gray-200 hover:border-brand hover:shadow-md transition-all ${
-              tool.href === "#" ? "opacity-50 pointer-events-none" : ""
-            }`}
+            className="block p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-500 hover:shadow-md transition-all"
           >
-            <h3 className="font-semibold text-gray-900 text-sm mb-1">
-              {tool.name}
-            </h3>
+            <h3 className="font-semibold text-gray-900 text-sm mb-1">{tool.name}</h3>
             <p className="text-xs text-gray-500">{tool.desc}</p>
-            {tool.href === "#" && (
-              <span className="inline-block mt-2 text-xs text-gray-400 bg-gray-100 px-2 py-0.5 rounded">
-                준비중
-              </span>
-            )}
           </Link>
         ))}
       </div>
@@ -90,52 +100,27 @@ function CategorySection({ id, icon, title, count, tools }: CategoryProps) {
 }
 
 export default function Home() {
+  const totalTools = financeTools.length + lifeTools.length + mfgTools.length + devTools.length + imageTools.length + docTools.length + genTools.length + compareTools.length;
+
   return (
     <div className="max-w-5xl mx-auto px-4 py-10">
       <div className="text-center mb-12">
         <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">
-          무료 온라인 도구 모음
+          무료 온라인 도구 모음 🛠️
         </h1>
         <p className="text-gray-500 text-base">
-          로그인 없이 바로 사용하는 계산기와 도구
+          로그인 없이 바로 사용하는 {totalTools}개 계산기와 도구
         </p>
       </div>
 
-      <CategorySection
-        id="finance"
-        icon="&#x1F4B0;"
-        title="금융/재테크"
-        count={12}
-        tools={financeTools}
-      />
-      <CategorySection
-        id="life"
-        icon="&#x1F3D7;&#xFE0F;"
-        title="생활/건강"
-        count={6}
-        tools={lifeTools}
-      />
-      <CategorySection
-        id="mfg"
-        icon="&#x1F3ED;"
-        title="제조/생산"
-        count={5}
-        tools={mfgTools}
-      />
-      <CategorySection
-        id="dev"
-        icon="&#x1F4BB;"
-        title="개발자 도구"
-        count={5}
-        tools={devTools}
-      />
-      <CategorySection
-        id="image"
-        icon="&#x1F5BC;&#xFE0F;"
-        title="이미지 도구"
-        count={5}
-        tools={imageTools}
-      />
+      <CategorySection id="finance" icon="💰" title="금융/재테크" tools={financeTools} />
+      <CategorySection id="life" icon="🏠" title="생활/건강" tools={lifeTools} />
+      <CategorySection id="mfg" icon="🏭" title="제조/생산" tools={mfgTools} />
+      <CategorySection id="dev" icon="💻" title="개발자 도구" tools={devTools} />
+      <CategorySection id="image" icon="🖼️" title="이미지 도구" tools={imageTools} />
+      <CategorySection id="doc" icon="📝" title="문서/업무" tools={docTools} />
+      <CategorySection id="gen" icon="🎲" title="생성기" tools={genTools} />
+      <CategorySection id="compare" icon="📊" title="비교" tools={compareTools} />
     </div>
   );
 }
