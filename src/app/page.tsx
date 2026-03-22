@@ -21,6 +21,9 @@ const lifeTools = [
   { name: "날짜 계산기", desc: "D-Day, 날짜 차이 계산", href: "/date" },
   { name: "단위 변환기", desc: "길이/무게/온도/면적 변환", href: "/unit-converter" },
   { name: "스톱워치 & 타이머", desc: "랩 기록 지원 스톱워치", href: "/stopwatch" },
+  { name: "칼로리 계산기", desc: "일일 권장 칼로리 계산", href: "/calorie" },
+  { name: "더치페이 계산기", desc: "N빵/팁 계산", href: "/tip-calculator" },
+  { name: "카운트다운 타이머", desc: "D-Day 실시간 카운트다운", href: "/countdown" },
 ];
 
 const mfgTools = [
@@ -71,6 +74,8 @@ const genTools = [
   { name: "비밀번호 생성기", desc: "안전한 비밀번호", href: "/password-gen" },
   { name: "해시태그 생성기", desc: "인스타 해시태그 추천", href: "/hashtag-gen" },
   { name: "이모지 검색", desc: "이모지 찾기 & 복사", href: "/emoji-search" },
+  { name: "랜덤 숫자/로또", desc: "랜덤 숫자 & 로또 번호", href: "/random-number" },
+  { name: "모스 부호 변환기", desc: "텍스트 ↔ 모스부호", href: "/morse-code" },
 ];
 
 const compareTools = [
