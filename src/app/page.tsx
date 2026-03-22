@@ -19,6 +19,8 @@ const lifeTools = [
   { name: "BMI 계산기", desc: "체질량지수 측정 및 판정", href: "/bmi" },
   { name: "나이 계산기", desc: "만나이/한국나이/띠/별자리", href: "/age" },
   { name: "날짜 계산기", desc: "D-Day, 날짜 차이 계산", href: "/date" },
+  { name: "단위 변환기", desc: "길이/무게/온도/면적 변환", href: "/unit-converter" },
+  { name: "스톱워치 & 타이머", desc: "랩 기록 지원 스톱워치", href: "/stopwatch" },
 ];
 
 const mfgTools = [
@@ -35,6 +37,11 @@ const devTools = [
   { name: "JWT 디코더", desc: "JWT 토큰 분석", href: "/jwt" },
   { name: "Cron 표현식 변환기", desc: "크론 스케줄 해석", href: "/cron" },
   { name: "SQL 포맷터", desc: "SQL 쿼리 정리", href: "/sql" },
+  { name: "색상 변환기", desc: "HEX/RGB/HSL 변환", href: "/color-picker" },
+  { name: "더미 텍스트 생성기", desc: "한글/영문 Lorem Ipsum", href: "/lorem-ipsum" },
+  { name: "URL 인코더/디코더", desc: "URL 인코딩/디코딩", href: "/url-encoder" },
+  { name: "정규식 테스터", desc: "정규표현식 실시간 테스트", href: "/regex-tester" },
+  { name: "내 IP 주소 확인", desc: "공인 IP 조회", href: "/ip-check" },
 ];
 
 const imageTools = [
@@ -52,6 +59,8 @@ const docTools = [
   { name: "연차 사유 생성기", desc: "연차 신청 사유 예시", href: "/annual-leave" },
   { name: "지각 변명 생성기", desc: "지각 사유 문자", href: "/late-excuse" },
   { name: "한줄 요약기", desc: "텍스트 요약 도구", href: "/text-summary" },
+  { name: "글자수 세기", desc: "공백 포함/제외 글자수", href: "/character-count" },
+  { name: "텍스트 변환기", desc: "대소문자/공백/줄바꿈 변환", href: "/text-transform" },
 ];
 
 const genTools = [
@@ -60,6 +69,8 @@ const genTools = [
   { name: "팀명 생성기", desc: "랜덤 팀 이름 생성", href: "/team-name-gen" },
   { name: "랜덤 뽑기", desc: "무작위 선택/추첨", href: "/random-picker" },
   { name: "비밀번호 생성기", desc: "안전한 비밀번호", href: "/password-gen" },
+  { name: "해시태그 생성기", desc: "인스타 해시태그 추천", href: "/hashtag-gen" },
+  { name: "이모지 검색", desc: "이모지 찾기 & 복사", href: "/emoji-search" },
 ];
 
 const compareTools = [
