@@ -4,9 +4,11 @@ import Link from "next/link";
 
 export default function CalculatorLayout({
   title,
+  category,
   children,
 }: {
   title: string;
+  category?: string;
   children: React.ReactNode;
 }) {
   return (
